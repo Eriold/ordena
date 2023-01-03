@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import { Icon } from '@/components/atom/intex';
+// import { Icon } from '@/components/atom/intex';
+import { Icon } from '@atom/intex';
 
 function App() {
   const [count, setCount] = useState(0)

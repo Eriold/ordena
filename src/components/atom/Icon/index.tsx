@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { Wrapper } from "./styled";
+import { FC } from "react";
+import { Wrapper } from "./style";
 
 interface TypeFill {
   type:
