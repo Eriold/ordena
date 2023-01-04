@@ -5,6 +5,9 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    open: true
+  },
   resolve: {
     alias: [
       { find: "@", replacement: path.resolve(__dirname, "src") },
@@ -12,4 +15,11 @@ export default defineConfig({
       { find: "@molecule", replacement: path.resolve(__dirname, "src/components/molecule/") },
     ],
   },
+  css: {
+    preprocessorOptions: {
+      styl: {
+        additionalData: `$injectedColor ?= orange`
+      }
+    }
+  }
 });
