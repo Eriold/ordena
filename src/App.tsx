@@ -3,9 +3,6 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { Table } from "@molecule/index";
 import { Icon } from '@atom/intex';
-// import { Button } from "antd";
-
-import 'antd/dist/reset.css';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,7 +24,6 @@ function App() {
         </button>
       </div>
       <Icon type='cash' size={90} />
-      {/* <Button>Chiwawa</Button> */}
       <Table text="M10" />
     </div>
   );
