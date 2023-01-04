@@ -9,6 +9,7 @@ export default defineConfig({
     alias: [
       { find: "@", replacement: path.resolve(__dirname, "src") },
       { find: "@atom", replacement: path.resolve(__dirname, "src/components/atom/") },
+      { find: "@molecule", replacement: path.resolve(__dirname, "src/components/molecule/") },
     ],
   },
 });
