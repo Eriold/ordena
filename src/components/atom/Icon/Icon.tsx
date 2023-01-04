@@ -13,7 +13,8 @@ interface TypeFill {
     | "add"
     | "cash"
     | "table"
-    | "clock";
+    | "clock"
+    | "check";
   fill?: string;
   size?: number;
   background?: string;
@@ -165,7 +166,7 @@ export const Icon: FC<TypeFill> = ({
       <circle className="st0" cx="14" cy="14" r="3" stroke={fill} />
       <path className="st0" d="M7,8c0,2.2-1.8,4-4,4" stroke={fill} />
       <path className="st0" d="M25,16c-2.2,0-4,1.8-4,4" stroke={fill} />
-      <rect height="680" width="536" x="-504" y="-144" fill="none"/>
+      <rect height="680" width="536" x="-504" y="-144" fill="none" />
     </svg>
   );
 
@@ -257,6 +258,20 @@ export const Icon: FC<TypeFill> = ({
     </svg>
   );
 
+  const Check = () => (
+    <svg
+      width={size}
+      viewBox="0 0 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14 0C6.272 0 0 6.272 0 14C0 21.728 6.272 28 14 28C21.728 28 28 21.728 28 14C28 6.272 21.728 0 14 0ZM14 25.2C7.826 25.2 2.8 20.174 2.8 14C2.8 7.826 7.826 2.8 14 2.8C20.174 2.8 25.2 7.826 25.2 14C25.2 20.174 20.174 25.2 14 25.2ZM20.426 7.812L11.2 17.038L7.574 13.426L5.6 15.4L11.2 21L22.4 9.8L20.426 7.812Z"
+        fill={fill}
+      />
+    </svg>
+  );
+
   const componentsMap: any = {
     Home,
     Menu,
@@ -269,6 +284,7 @@ export const Icon: FC<TypeFill> = ({
     Cash,
     Table,
     Clock,
+    Check,
   };
 
   const nameIcon: string = type[0].toUpperCase() + type.substring(1);
